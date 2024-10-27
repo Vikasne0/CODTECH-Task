@@ -1,0 +1,61 @@
+/*
+Purpose: The code checks the strength of a password based on length, complexity, and commonness.
+Length Check: Awards points for passwords that are 8, 12, or 16 characters long.
+Complexity Check: Awards points for including:
+Lowercase letters
+Uppercase letters
+Digits
+Special characters
+Common Password Check: Flags the password if it matches a list of common passwords.
+
+Strength Assessment:
+
+0-2 points: Weak password
+3-4 points: Moderate password
+5+ points: Strong password
+Usage: Prompts the user to enter a password and displays its strength.
+*/
+----------------------------------------------------------Code--------------------------------------------------------------------
+
+import re
+
+def password_strength_checker(password):
+    # Initialize strength score
+    score = 0
+
+    # Check length
+    if len(password) >= 8:
+        score += 1
+    if len(password) >= 12:
+        score += 1
+    if len(password) >= 16:
+        score += 1
+
+    # Check for complexity
+    if re.search(r"[a-z]", password):  # Lowercase letters
+        score += 1
+    if re.search(r"[A-Z]", password):  # Uppercase letters
+        score += 1
+    if re.search(r"[0-9]", password):  # Digits
+        score += 1
+    if re.search(r"[!@#$%^&*(),.?\":{}|<>]", password):  # Special characters
+        score += 1
+
+    # Check for uniqueness (against a list of common passwords)
+    common_passwords = {"password", "123456", "123456789", "12345678", "12345", "1234567", "qwerty", "abc123", "letmein", "monkey"}
+    if password.lower() in common_passwords:
+        return "Password is too common. Please choose a different password."
+
+    # Determine strength based on score
+    if score <= 2:
+        return "Weak password."
+    elif score <= 4:
+        return "Moderate password."
+    else:
+        return "Strong password."
+
+# Example usage
+if __name__ == "__main__":
+    user_password = input("Enter a password to check its strength: ")
+    strength = password_strength_checker(user_password)
+    print(strength)
