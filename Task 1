@@ -1,4 +1,5 @@
 /*
+Task 1 : Password Strenthen Checker
 Purpose: The code checks the strength of a password based on length, complexity, and commonness.
 Length Check: Awards points for passwords that are 8, 12, or 16 characters long.
 Complexity Check: Awards points for including:
