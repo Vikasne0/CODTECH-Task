@@ -6,8 +6,8 @@ Duration: 8 Weeks
 
 Domain: Cyber Security & Ethical Hacking
 
-Overview of the Project
-TASK -- 1
+----------------------------------------------------------Overview of the Project------------------------------------------------------------
+TASK -- 1-
 
 **Overview of the Password Strength Checker Code**
 This Python script helps users assess the strength of their passwords by scoring them based on:
