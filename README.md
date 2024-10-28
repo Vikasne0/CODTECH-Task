@@ -36,6 +36,11 @@ Conclusion
 This password strength checker is a useful tool for creating secure passwords, with opportunities for enhancements
 to improve its effectiveness and user experience
 
+![Screenshot 2024-10-28 190650](https://github.com/user-attachments/assets/e8ef5d1b-13f3-4f46-b502-11f6e04b21f0)
+
+
+
+
 Task --2 
 
 Vulnerability Scanning Tool
@@ -71,3 +76,6 @@ CI/CD Integration: Incorporates security checks into development pipelines.
 
 Conclusion
 This tool is effective for quickly assessing network and website security, with future enhancements aimed at improving its functionality and user experience.
+
+![Screenshot 2024-10-28 183456](https://github.com/user-attachments/assets/dc7edf42-568d-4878-9487-96e482d613e1)
+
