@@ -42,20 +42,31 @@ Vulnerability Scanning Tool
 Features:
 
 IP Validation: Checks if an input string is a valid IP address.
+
 URL Validation: Validates properly formatted URLs.
+
 Ping Host: Determines if a specified host is reachable.
+
 Port Scanning: Scans ports 1 to 1024 for open connections.
+
 Website Security Check: Analyzes security headers and identifies potential vulnerabilities based on server type.
+
 User Interaction: Prompts users for input and performs checks accordingly.
 
 **Future Improvements and Uses**
 
 Enhanced Reporting: Detailed vulnerability reports with severity levels.
+
 Threat Intelligence Integration: Identifies known vulnerabilities linked to specific IPs or URLs.
+
 Automated Remediation Suggestions: Provides actionable recommendations for fixing vulnerabilities.
+
 Scheduled Scans: Allows regular monitoring of networks and applications.
+
 User Authentication Checks: Evaluates password strength and authentication mechanisms.
+
 Mobile and Cloud Compatibility: Adapts to security needs in mobile and cloud environments.
+
 CI/CD Integration: Incorporates security checks into development pipelines.
 
 Conclusion
